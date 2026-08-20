@@ -28,7 +28,6 @@ services:
   warp:
     container_name: warp
     image: caomingjun/warp:latest
-    profiles: ["warp"]
     restart: unless-stopped
     ports:
       - "127.0.0.1:1080:1080"
@@ -45,7 +44,6 @@ services:
   flaresolverr:
     container_name: flaresolverr
     image: ghcr.io/flaresolverr/flaresolverr:latest
-    profiles: ["flaresolverr"]
     environment:
       TZ: Asia/Shanghai
       LOG_LEVEL: info
