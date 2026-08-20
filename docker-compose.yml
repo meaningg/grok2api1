@@ -80,3 +80,7 @@ services:
 volumes:
   grok2api-data:
   quality_guard_state:
+
+networks:
+  dokploy-network:
+    external: true
